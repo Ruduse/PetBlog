@@ -1,18 +1,29 @@
+
+Chuẩn bị dữ liệu
+1.1. Cài đặt thư viện cần thiết
+1.2. Tạo thư mục dữ liệu
+1.3. Tạo tập dữ liệu giả lập
+1.4. Chia tập train/test
+
+Huấn luyện mô hình
+2.1. File cấu hình data.yaml
+2.2. Huấn luyện với YOLO
+
+Kiểm tra mô hình
+3.1. Đánh giá kết quả trên tập validation
+
+Dự đoán hình ảnh mới
+4.1. Tải mô hình đã huấn luyện
+4.2. Hiển thị kết quả dự đoán
+
+Xuất mô hình
+5.1. Lưu mô hình dưới định dạng ONNX
+
+Ghi chú và lời khuyên
+6.1. Lưu ý khi làm việc với tập dữ liệu thực tế
+6.2. Tinh chỉnh tham số huấn luyện
+
 Các bước để hoàn thành project
- Introduction
-Chapter 1 - What is Object Detection?
-Chapter 2 - A Brief History
-Chapter 3 - Performance Evaluation Metrics
-Chapter 4 - Installations
-Chapter 4.1 - Package Installations
-Chapter 5 - Running Yolo
-Chapter 6 - Yolo with Webcam
- Chapter 7 - Yolo with GPU
-Premium Courses
- Project 1 - Car Counter
-Project 2 - People Counter
- Project 3 - PPE Detection (Custom Training)
- Project 4 - Poker Hand Detector
 
 1.Installation: tải các IDE,Python
 
@@ -21,8 +32,32 @@ Project 2 - People Counter
 
 
 lưu ý:Tạo môi truong ảo ,cài đặt numpy trước,rồi đến các thư viện khác, hạ cấp hoặc thăng cấp các thư 
+3.Creat Project: tạo đồ án
+Chuẩn bị dữ liệu
+1.1. Cài đặt thư viện cần thiết
+1.2. Tạo thư mục dữ liệu
+1.3. Tạo tập dữ liệu giả lập
+1.4. Chia tập train/test
 
-3.Các lệnh git
+Huấn luyện mô hình
+2.1. File cấu hình data.yaml
+2.2. Huấn luyện với YOLO
+
+Kiểm tra mô hình
+3.1. Đánh giá kết quả trên tập validation
+
+Dự đoán hình ảnh mới
+4.1. Tải mô hình đã huấn luyện
+4.2. Hiển thị kết quả dự đoán
+
+Xuất mô hình
+5.1. Lưu mô hình dưới định dạng ONNX
+
+Ghi chú và lời khuyên
+6.1. Lưu ý khi làm việc với tập dữ liệu thực tế
+6.2. Tinh chỉnh tham số huấn luyện
+
+4.Các lệnh git
 git init
 git remote add origin https://github.com/Ruduse/PetBlog.git
 git remote -v
