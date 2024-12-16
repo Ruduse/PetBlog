@@ -21,6 +21,7 @@ classNames = ["person", "bicycle", "car", "motorbike", "aeroplane", "bus", "trai
               "diningtable", "toilet", "tvmonitor", "laptop", "mouse", "remote", "keyboard", "cell phone",
               "microwave", "oven", "toaster", "sink", "refrigerator", "book", "clock", "vase", "scissors",
               "teddy bear", "hair drier", "toothbrush"]
+# classNames = ['Cat', 'Dog', 'Chicken', 'Elephant', 'Human', 'Horse']
 
 fps_limit = 15  # Giới hạn FPS để tiết kiệm tài nguyên
 prev_frame_time = 0
@@ -43,7 +44,7 @@ while True:
         for r in results:
             boxes = r.boxes
             for box in boxes:
-                # Lấy toạ độ của Bounding Box
+                # Lấy toạ độ của Bounding Boxq
                 x1, y1, x2, y2 = box.xyxy[0]
                 x1, y1, x2, y2 = int(x1), int(y1), int(x2), int(y2)
                 w, h = x2 - x1, y2 - y1

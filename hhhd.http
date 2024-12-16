@@ -1,0 +1,13 @@
+
+# GET  http://localhost:8080/api/users
+
+POST   http://localhost:8080/api/addNewUser
+
+
+Content-Type : application/json
+
+{
+    "firstName" : "a",
+    "lastName" : "a",
+    "password" : "123"
+}

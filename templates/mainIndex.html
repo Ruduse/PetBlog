@@ -1,0 +1,53 @@
+<!-- <script>
+// Chạy webcam khi nhấn nút Start Webcam
+let videoElement = document.getElementById('webcam-video');
+let startButton = document.getElementById('start-webcam');
+let pauseButton = document.getElementById('pause-webcam');
+let stopButton = document.getElementById('stop-webcam');
+let stream = null; // Để lưu trữ đối tượng MediaStream
+
+// Chạy webcam khi nhấn nút Start Webcam
+startButton.addEventListener("click", function() {
+if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
+navigator.mediaDevices.getUserMedia({ video: true })
+  .then(function(cameraStream) {
+    stream = cameraStream;  // Lưu trữ stream vào biến
+    videoElement.srcObject = cameraStream;
+
+    // Kích hoạt nút Pause và Stop
+    pauseButton.disabled = false;
+    stopButton.disabled = false;
+    startButton.disabled = true;
+  })
+  .catch(function(error) {
+    console.error("Something went wrong with webcam access: ", error);
+  });
+} else {
+alert("Webcam not supported.");
+}
+});
+
+// Tạm dừng webcam khi nhấn nút Pause Webcam
+pauseButton.addEventListener("click", function() {
+if (stream) {
+let tracks = stream.getTracks();
+tracks.forEach(track => track.enabled = false);  // Tạm dừng video stream
+pauseButton.disabled = true;
+}
+});
+
+// Dừng webcam khi nhấn nút Stop Webcam
+stopButton.addEventListener("click", function() {
+if (stream) {
+let tracks = stream.getTracks();
+tracks.forEach(track => track.stop());  // Dừng video stream
+videoElement.srcObject = null;
+
+// Khôi phục trạng thái các nút
+startButton.disabled = false;
+pauseButton.disabled = true;
+stopButton.disabled = true;
+}
+});
+
+</script> -->

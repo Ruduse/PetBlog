@@ -1,0 +1,6 @@
+# path: '/content/gdrive/MyDrive/AI/dat/data' # dataset root dir
+train: data/images/train  # train images (relative to 'path')
+val: data/images/val  # val images (relative to 'path')
+
+nc: 3  
+names: ['wildlife', 'human', 'Animal']

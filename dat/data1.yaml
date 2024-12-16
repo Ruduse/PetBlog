@@ -1,0 +1,4 @@
+train: dat/images/train
+val: dat/images/val
+nc: 6  
+names: ['Cat', 'Dog', 'Chicken', 'Elephant', 'Human', 'Horse']

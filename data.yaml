@@ -1,0 +1,4 @@
+train: C:/Users/rimdang/Project/PetBlog/data/images/train
+val: C:/Users/rimdang/Project/PetBlog/data/images/train
+nc: 6  # Số lớp (Cat, Dog, Chicken, Elephant, Human, Horse)
+names: ['Cat', 'Dog', 'Chicken', 'Elephant', 'Human', 'Horse']
